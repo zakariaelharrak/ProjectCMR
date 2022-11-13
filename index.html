@@ -1,0 +1,360 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <title>CMR New Version</title>
+    <link rel = "icon" href ="/Styles/Images/logo.png" type = "image/x-icon">
+              
+
+    
+</head>
+<body id="body">
+
+<!-- The 1 Layout -->
+<div id="layout-1">
+    <div id="banner" class="w-full h-screen  bg-top	 my-screen/2  -0 text-center ">
+        <!-- Header -->
+        <div id="header" class="p-8">
+            <nav class="flex items-center justify-between bg-teal ">
+                <div class="flex items-center  text-white mr-6">
+                  <span class="font-semibold text-xl tracking-tight"><img src="logo.png" alt="logo"></span>
+                </div>
+                <div class="w-full block flex items-center w-auto">
+                  <div class="text-sm flex-grow">
+                    
+                  </div>
+                  <div>
+                    <a onclick="openNav3()" id="App" class="  text-sm px-4 py-3 leading-none border-2 rounded-lg text-sky-600 border-sky-600 mt-4 collapse invisible hidden sm:inline-block sm:visible  ">Log in</a>
+                   
+
+
+                    <a href="#" class="inline-block text-sm px-4 py-3 leading-none border-2 rounded-lg text-white border-sky-700 bg-sky-700  mt-4 collapse   invisible hidden sm:inline-block sm:visible  ">Sign Up</a>
+                    <a href="#" class="inline-block text-sm px-4 py-3 leading-none border-2 rounded-lg text-slate-800 drop-shadow-lg border-white bg-white  ">🇫🇷 <i class="bi bi-caret-down-fill"></i></a>
+                    <a  class="inline-block text-sm px-4 py-3 leading-none border-2 rounded-lg text-slate-800 drop-shadow-lg border-white bg-white  " onclick="openNav2()"><i class="bi bi-search"></i></a>
+                    <a  onclick="openNav()" class="inline-block text-sm px-4 py-3 leading-none border-2 rounded-lg drop-shadow-lg text-slate-800 border-white bg-white  "><i class="bi bi-list"></i></a>
+
+
+                  </div>
+
+                </div>
+              </nav>
+          </div>
+          <!-- Sidebar menu -->
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <a href="/" class="text-sky-600 text-2xl ">Accueil</a>
+                <a href="/" class="text-sky-600 text-2xl ">La Cmr</a>
+                <ul class="dropdown">
+                  <li><a class="text-slate-800 text-base" href="/">Présentation</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Gouvernance</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Textes Juridiques</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Cmr En Chiffres</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Actualités</a></li>
+
+                </ul>
+                <a href="/" class="text-sky-600 text-2xl ">E-services</a>
+                <ul class="dropdown">
+                  <li><a class="text-slate-800 text-base" href="/">Espace Affilié</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Espace Pensionné</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Espace E-retraite Cmr</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Bureau D'ordre Digital</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Actualités</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Attakmili</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Simuler Votre Retraite</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Espace Public</a></li>
+
+                </ul>
+                <a href="/" class="text-sky-600 text-2xl ">Documentation</a>
+                <ul class="dropdown">
+                  <li><a class="text-slate-800 text-base" href="/">Rapports D'activités</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Guides</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Brochures</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Lexique</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Faq</a></li>
+
+                </ul>
+                <a href="/" class="text-sky-600 text-2xl ">Communication</a>
+                <ul class="dropdown">
+                  <li><a class="text-slate-800 text-base" href="/">Communiqués & Articles De Presse</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">أجي نفهمو التقاعد</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Evénements Cmr</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Médiathèque</a></li>
+
+                </ul>
+                <a href="/" class="text-sky-600 text-2xl ">Appels D'offres</a>
+                <ul class="dropdown">
+                  <li><a class="text-slate-800 text-base" href="/">Liste D'appels D'offres</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Programme Prévisionnel</a></li>
+
+
+                </ul>
+                <a href="/" class="text-sky-600 text-2xl ">Capital Humain</a>
+                <a href="/" class="text-sky-600 text-2xl ">Authentification Attestations</a>
+                <a href="/" class="text-sky-600 text-2xl ">Contact</a>
+                <ul class="dropdown">
+                  <li><a class="text-slate-800 text-base" href="/">Centre D'appels</a></li>
+                  <li><a class="text-slate-800 text-base" href="/">Délégations & Guichets Cmr</a></li>
+                  
+
+
+                </ul>
+                <button class="rounded-md border-2 rounded-lg text-sky-600 border-sky-600  py-4 px-16 text-base	font-thin sm:invisible">Log in</button>
+                <button class="rounded-md border-2 rounded-lg text-white bg-sky-700 my-1 py-4 px-16 text-base	font-thin sm:invisible">Sign Up</button>
+
+     
+
+
+
+          </div>
+
+          <!-- login Sidebar -->
+
+          <div id="mySidenav3" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+          
+                      <div id="popsup" class="m-4 ">
+                        <h1 class="text-sky-600 text-left text-xl	">Votre compte</h1>
+                        <input class=" my-2  w-full rounded border-gray-300" type="text" placeholder="Adresse e-mail" >
+                        <input class=" my-2  w-full rounded border-gray-300" type="password" placeholder="Mot de passe" >
+                        <button class="w-full rounded-md bg-sky-700 my-2 py-2 text-base	font-thin">Se connecter</button>
+                        <a class="text-base text-slate-800"><span class="text-sky-600">Mot de passe oublié ?</span> Créer nouveau compte</a>
+                      </span></div>
+          
+                          </ul>
+          
+          
+                    </div>
+       <!-- Hero content -->
+        <div id="hero-content" class="text-center py-16 px-16 lg:p-8 xl:py-32 xl:px-48 ">
+           <h1 class="text-slate-800 font-semibold text-5xl  lg:text-8xl ">La Caisse marocaine des retraites (CMR)</h1>
+           <p class="text-slate-800 font-thin p-8 text-base  sm:px-8 sm:text-base md:px-16 md:text-base lg:px-64 lg:text-xl ">est un établissement public marocain chargé de la gestion des régimes de retraites des fonctionnaires marocains. Son directeur actuel est Lotfi Boujendar depuis juin 2022.     </p>
+           <button class="rounded-md bg-sky-700 py-4 px-8 text-base	font-thin">Plus Détails <i class="bi bi-arrow-down-circle-fill"></i></button>
+
+        </div>
+
+         
+
+
+
+        <div>
+      <div id="myNav2" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <div class="overlay-content">
+          <h1 class="text-7xl m-16 text-slate-900 font-semibold sm:text-9xl ">Rechercher</a>
+            <br>
+         <input class="my-8 p-4 w-1/2 rounded-xl border-white sm:1/2" type="text" placeholder="Rechercher une information" id="">
+
+        </div>
+     </div>
+        </div>
+      
+
+      
+
+</div>
+
+<!-- The 2 Layout -->
+
+<div id="layout-2" class="py-8 sm:py-48" >
+  <h1 class="text-slate-800 font-semibold text-4xl text-center my-8	">Accès thématique</h1>
+   <div class="px-8 mx-auto grid grid-rows-4 grid-flow-col gap-5  text-center md:grid-rows-2 lg:px-80 ">
+  <div id="col" class="bg-[url('col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto bg-center	">
+    <a href="/" class="px-4 text-white  text-center text-2xl ">Consulter vos droits à la retraite</a>
+  </div>
+  <div id="col" class="bg-[url('/styles/Images/col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-4  text-white  text-center text-2xl ">Amèliorer votre retraite</a>
+  </div>
+  <div id="col" class="bg-[url('col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-4  text-white  text-center text-2xl ">Simuler votre pension</a>
+  </div>
+  <div id="col" class=" bg-[url('/styles/Images/col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-4  text-white  text-center text-2xl ">Consulter votre pension</a>
+  </div>
+  <div id="col" class=" bg-[url('/styles/Images/col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-4  text-white  text-center text-2xl ">Arrêt d'une prestation</a>
+  </div>
+  <div id="col" class="bg-[url('/styles/Images/col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-4 text-white  text-center text-2xl ">Contrôle de droit</a>
+  </div>
+  <div id="col" class="bg-[url('/styles/Images/col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-4 text-white  text-center text-2xl ">demende de réversion</a>
+  </div>
+  <div id="col" class=" bg-[url('/styles/Images/col-bg.svg')] bg-no-repeat	bg-cover bg-sky-700 rounded-lg w-auto ">
+    <a href="/" class="px-8 text-white  text-center text-2xl ">Prise de rendez-vous</a>
+  </div>
+
+
+     
+    </div>
+</div> 
+
+<!-- The 3 Layout -->
+
+<div id="layout-3" class="py-48">
+  <h1 class="text-white font-semibold text-6xl text-center my-8	">Actualités</h1>
+   <div class="my-4 px-16 mx-auto grid grid-rows-3 grid-flow-col gap-4  text-center md:grid-rows-1">
+    <div id="col2" class="bg-[url('post-1.svg')] bg-no-repeat	bg-cover	 py-16 bg-sky-700 rounded-lg w-auto ">
+      <a href="/" class="px-2 text-white  text-center text-2xl ">L’Agence de Développement du Digital et la Caisse Marocaine des Retraites...</a><br>
+      <button class="my-2 rounded-md bg-sky-700 py-4 px-16 text-base text-white text-center	font-thin">Suite </button>
+    </div>
+    <div id="col2" class="bg-[url('post-2.svg')] bg-no-repeat	bg-cover	 py-16 bg-sky-700 rounded-lg w-auto ">
+      <a href="/" class="px-2 text-white  text-center text-2xl ">L’Agence de Développement du Digital et la Caisse Marocaine des Retraites...</a><br>
+      <button class="my-2 rounded-md bg-sky-700 py-4 px-16 text-base text-white text-center	font-thin">Suite </button>
+    </div>
+    <div id="col2" class="bg-[url('post-3.svg')] bg-no-repeat	bg-cover	 py-16 bg-sky-700 rounded-lg w-auto ">
+      <a href="/" class="px-2 text-white  text-center text-2xl ">L’Agence de Développement du Digital et la Caisse Marocaine des Retraites...</a><br>
+      <button class="my-2 rounded-md bg-sky-700 py-4 px-16 text-base text-white text-center	font-thin">Suite </button>
+    </div>
+
+
+
+
+    
+    </div>
+    <div class="px-16 mx-16 grid grid-rows-1 grid-flow-col gap-4 my-8  text-center  xl:px-72 xl:mx-72">
+      <div id="col2" class=" rounded-2xl border-2 border-white rounded-lg w-auto ">
+        <button class=" my-2  py-1 rounded-xl  text-base text-white text-center	font-thin"><i class="bi bi-chevron-left"></i> </button>
+      </div>
+      <div id="col2" class=" rounded-2xl border-2 border-white rounded-lg w-auto ">
+        <button class="my-2 rounded-md  text-base text-white text-center	font-thin">Voir tout </button>
+      </div>
+      <div id="col2" class="rounded-2xl border-2 border-white rounded-lg w-auto ">
+        <button class="my-2 py-1 rounded-xl  text-base text-white text-center	font-thin"><i class="bi bi-chevron-right"></i> </button>
+      </div>
+  
+      
+      </div>
+</div> 
+
+<!-- The 4 Layout -->
+
+<div id="layout-4" class="py-32">
+  <h1 class="text-slate-800 font-semibold text-6xl text-center my-8	">Vidéos</h1>
+   <div class="my-4 px-16 mx-auto grid grid-rows-3 grid-flow-col gap-4  text-center md:grid-rows-1">
+    <div href="" id="col2" class="bg-[url('video-1.svg')] bg-no-repeat	bg-cover	px-8 py-48 bg-sky-700 rounded-lg w-auto ">
+
+    </div>
+    <div href="" id="col2" class="bg-[url('video-2.svg')] bg-no-repeat	bg-cover	px-8 py-48 bg-sky-700 rounded-lg w-auto ">
+
+    </div>
+    <div href="" id="col2" class="bg-[url('video-3.svg')] bg-no-repeat	bg-cover	px-8 py-48 bg-sky-700 rounded-lg w-auto ">
+
+    </div>
+
+
+
+
+
+    
+    </div>
+    <div class="px-16 mx-16 grid grid-rows-1 grid-flow-col gap-4 my-8  text-center xl:px-96 xl:mx-32">
+      <div id="col2" class="  border-2 border-white rounded-lg w-auto ">
+        <button class=" my-2  py-1 rounded-xl invisible  text-base text-white text-center	font-thin"><i class="bi bi-chevron-left"></i> </button>
+      </div>
+      <div  id="col2" class=" rounded-2xl	 border-2 border-sky-600 rounded-lg w-auto ">
+        <button href="https://www.youtube.com/channel/UCfyNP1E-DR5ar8nu8IOBkGA" class="my-2	 text-white text-sky-600 font-bold	">Voir tout </button>
+      </div>
+      <div id="col2" class=" border-2 border-white rounded-lg w-auto ">
+        <button class="my-2 py-1 rounded-xl  invisible text-base text-white text-center	font-thin"> </button>
+      </div>
+  
+   
+      </div>
+
+</div> 
+
+<!-- footer-->
+<div id="layout-4" class="bg-sky-700  ">
+  <div class="my-4  mx-auto grid grid-rows-3 grid-flow-col gap-4 text-white  text-center md:grid-rows-1">
+    <div id="col2" class="border-b-2	border-white place-self-center		px-8 py-24 bg-sky-700  w-auto  sm:border-r-2 sm:border-b-0">
+      <h1 class="text-center color-white text-3xl font-semibold	">La Caisse marocaine des <br> retraites (CMR)</h1>
+      <img class="place-self-center	mx-auto my-4" src="bank-banners.svg" alt="">
+    </div>
+    <div id="col2" class="border-b-2		px-8 py-16 bg-sky-700  w-auto sm:border-r-2 sm:border-b-0">
+      <h1 class="text-left color-white text-xl font-semibold	">CONTACT INFO</h1>
+      <div class="my-4"><ul class="text-left font-thin">
+        <p><i class="fas fa-band-aid"></i>Avenue Al Araar - B.P 2.048 Rabat - 10.113</p>
+        <p><i class="fas fa-band-aid"></i>Centre d'appel 0537 567 567</p>
+        <p><i class="fas fa-band-aid"></i>email@cmr.gov.ma</p>
+      
+      </ul>  </div>
+    </div>
+    <div id="col2" class="	px-8 py-8 bg-sky-700 rounded-lg w-auto ">
+      <h1 class="text-left color-white text-xl font-semibold	">Liens</h1>
+      <div class="my-4  mx-auto grid grid-rows-1 grid-flow-col gap-2 text-white ">
+        <div class="text-left font-thin">      
+          <ul >
+          <p >Pièces à fournir par prestations</p>
+          <p >Formulaires</p>
+          <p >La charte des services</p>
+          <p >La charte de la médiation</p>
+          <p >Bureau d'ordre digital</p>
+
+        
+        </ul>  
+        </div>
+        <div>      
+          <ul class="text-left font-thin">
+            <p >Chikaya.ma</p>
+            <p >Liens utiles</p>
+            <p >Plan de site</p>
+            <p >Mentions légales</p>
+        
+        </ul> 
+       </div>
+
+
+      </div>
+
+
+    </div>
+
+      </div> 
+
+      <div class="bg-sky-800 py-4">
+      <h1 class="text-center  text-white text-xl font-semibold	">2021 © CMR. Tous droits réservés.
+        <br><i class="bi bi-facebook"></i>
+        <i class="bi bi-youtube"></i></h1>
+        </h1>
+      </div>
+    </div>
+
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  function openNav2() {
+document.getElementById("myNav2").style.display = "block";
+}
+
+function closeNav2() {
+document.getElementById("myNav2").style.display = "none";
+}
+function openNav3() {
+    document.getElementById("mySidenav3").style.width = "250px";
+  }
+  
+  function closeNav3() {
+    document.getElementById("mySidenav3").style.width = "0";
+  }
+
+
+
+
+
+   </script>
+</body>
+</html>
